@@ -136,11 +136,14 @@ input, select, textarea {
 			-ms-transform: rotate(360deg);
 			transform: rotate(360deg);
 		}
-	}
 
 	@-ms-viewport {
 		width: device-width;
 	}
+	$('video').autoplay = true;
+$('video').load();
+
+}
 
 	html {
 		width: 100%;
