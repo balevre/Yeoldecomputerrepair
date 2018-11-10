@@ -883,12 +883,17 @@ input, select, textarea {
 	}
 
 
-	.image.filtered.monked:after {
+	.image.filtered.board:after {
 		background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.2) 25%, rgba(227, 123, 124, 0.2) 50%, rgba(255, 228, 180, 0.2));
 		background-size: 128px 128px, auto, auto;
 
 	}
 
+	.image.filtered.board2:after {
+		background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(72, 71, 66, 0.8) 25%, rgba(72, 79, 70, 0.9) 50%, rgba(135, 125, 109, 0.9));
+		background-size: 128px 128px, auto, auto;
+
+	}
 
 		.image[data-position] img {
 			-moz-object-fit: cover;
