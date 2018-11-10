@@ -71,7 +71,6 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
 /* Page */
 
 	@-moz-keyframes load-spinner {
@@ -848,9 +847,6 @@ input, select, textarea {
 		}
 
 /* Image */
-
-
-
 
 	.image {
 		display: inline-block;
