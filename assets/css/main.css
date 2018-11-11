@@ -875,13 +875,13 @@ input, select, textarea {
 		}
 
 		.image.filtered.tinted:after {
-			background-image: url("../../images/overlay.png"), linear-gradient(80deg, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0,0,0 ,0.6)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
+			background-image: url("../../images/overlay.png"), linear-gradient(80deg, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0,0,0 ,0.5)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
 			background-size: 128px 128px, auto, auto;
 
 		}
 
 	.image.filtered.dark.tinted:after {
-		background-image: url("../../images/overlay.png"), linear-gradient(80deg, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.75) 50%, rgba(0,0,0 ,0.75)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
+		background-image: url("../../images/overlay.png"), linear-gradient(80deg, rgba(0, 0, 0, 0.85) 25%, rgba(0, 0, 0, 0.85) 50%, rgba(0,0,0 ,0.85)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
 		background-size: 128px 128px, auto, auto;
 
 	}
@@ -902,6 +902,11 @@ input, select, textarea {
 
 	.image.filtered.board2:after {
 		background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(72, 71, 66, 0.8) 25%, rgba(72, 79, 70, 0.9) 50%, rgba(135, 125, 109, 0.9));
+		background-size: 128px 128px, auto, auto;
+
+	}
+	.image.filtered.dark.half.tinted:after {
+		background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(0, 0, 0, .95) 25%, rgba(0, 0, 0, 0.8) 50%, rgba(0,0,0, .5)), linear-gradient(90deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
 		background-size: 128px 128px, auto, auto;
 
 	}
