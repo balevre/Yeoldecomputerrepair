@@ -3609,11 +3609,12 @@ input, select, textarea {
 
 		#wrapper > .copyright {
 			position: absolute;
-			bottom: -3rem;
+			bottom: -2rem;
 			right: 0;
-			font-size: 0.8rem;
+			font-size: 0.92rem;
 			color: rgba(46, 43, 55, 0.375);
 			margin-bottom: 0;
+			text-align: left;
 		}
 
 			#wrapper > .copyright a:hover {
