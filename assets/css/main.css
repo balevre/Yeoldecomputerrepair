@@ -1788,6 +1788,8 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		height: 100%;
+		overflow-x:scroll;
+		overflow-y:scroll;
 	}
 
 		.gallery > * {
@@ -1799,7 +1801,8 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			border-bottom: 0;
-			overflow: hidden;
+			overflow-x: scroll;
+			overflow-y: scroll;
 		}
 
 			.gallery .image img {
@@ -1807,6 +1810,8 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.2s ease-in-out;
 				-ms-transition: -ms-transform 0.2s ease-in-out;
 				transition: transform 0.2s ease-in-out;
+				overflow-x:scroll;
+				overflow-y:scroll;
 			}
 
 			.gallery .image:after {
@@ -1821,6 +1826,7 @@ input, select, textarea {
 				-webkit-transform: scale(1.025);
 				-ms-transform: scale(1.025);
 				transform: scale(1.025);
+
 			}
 
 			.gallery .image:hover:after {
@@ -1875,6 +1881,8 @@ input, select, textarea {
 			outline: 0;
 			visibility: none;
 			z-index: 0;
+			overflow-x:scroll;
+			overflow-y:scroll;
 		}
 
 			.gallery .modal:before {
@@ -1930,12 +1938,17 @@ input, select, textarea {
 				-ms-transition: opacity 0.25s ease, -ms-transform 0.25s ease;
 				transition: opacity 0.25s ease, transform 0.25s ease;
 				opacity: 0;
+				position:relative;
+				overflow: auto;
+				height: none;
 			}
 
 				.gallery .modal .inner img {
 					display: block;
-					max-width: 90vw;
-					max-height: 85vh;
+					max-width: none;
+					max-height: none;
+					overflow-x:scroll;
+					overflow-y:scroll;
 					box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
 				}
 
@@ -3592,7 +3605,7 @@ input, select, textarea {
 	}
 
 		#wrapper > .scrollZone {
-			position: absolute;
+			position: fixed;
 			width: 6rem;
 			height: inherit;
 			cursor: -moz-grab;

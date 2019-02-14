@@ -703,7 +703,7 @@
 							.removeClass('visible')
 
 						// Pause scroll zone.
-							$wrapper.triggerHandler('---pauseScrollZone');
+							
 
 						setTimeout(function() {
 
