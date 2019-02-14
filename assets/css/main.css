@@ -1801,8 +1801,8 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			border-bottom: 0;
-			overflow-x: scroll;
-			overflow-y: scroll;
+			overflow-x: auto;
+			overflow-y: auto;
 		}
 
 			.gallery .image img {
@@ -1810,8 +1810,8 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.2s ease-in-out;
 				-ms-transition: -ms-transform 0.2s ease-in-out;
 				transition: transform 0.2s ease-in-out;
-				overflow-x:scroll;
-				overflow-y:scroll;
+				overflow-x:auto;
+				overflow-y:auto;
 			}
 
 			.gallery .image:after {
@@ -1881,8 +1881,8 @@ input, select, textarea {
 			outline: 0;
 			visibility: none;
 			z-index: 0;
-			overflow-x:scroll;
-			overflow-y:scroll;
+			overflow-x:auto;
+			overflow-y:auto;
 		}
 
 			.gallery .modal:before {
@@ -1947,8 +1947,8 @@ input, select, textarea {
 					display: block;
 					max-width: none;
 					max-height: none;
-					overflow-x:scroll;
-					overflow-y:scroll;
+					overflow-x:auto;
+					overflow-y:auto;
 					box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
 				}
 
@@ -3623,6 +3623,9 @@ input, select, textarea {
 			#wrapper > .scrollZone.right {
 				right: 0;
 			}
+			#wrapper.noscroll {
+  		overflow: hidden;
+}
 
 		#wrapper > .copyright {
 			position: absolute;
@@ -3634,9 +3637,6 @@ input, select, textarea {
 			text-align: left;
 		}
 
-			#wrapper > .copyright a:hover {
-				color: inherit;
-			}
 
 		#wrapper.is-dragging {
 			-moz-user-select: none;

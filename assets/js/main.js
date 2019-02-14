@@ -315,7 +315,7 @@
 								return;
 
 						// Prevent default.
-							event.preventDefault();
+
 							event.stopPropagation();
 
 						// Stop link scroll.
@@ -340,6 +340,8 @@
 
 				var	$left = $('<div class="scrollZone left"></div>'),
 					$right = $('<div class="scrollZone right"></div>'),
+					$up = $('<div class="scrollZone up"></div>'),
+					$down = $('<div class="scrollZone down"></div>'),
 					$zones = $left.add($right),
 					paused = false,
 					intervalId = null,
@@ -703,7 +705,7 @@
 							.removeClass('visible')
 
 						// Pause scroll zone.
-							
+							$wrapper.triggerHandler('---pauseScrollZone');
 
 						setTimeout(function() {
 
