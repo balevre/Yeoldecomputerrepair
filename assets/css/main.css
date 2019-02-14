@@ -3592,7 +3592,7 @@ input, select, textarea {
 	}
 
 		#wrapper > .scrollZone {
-			position: fixed;
+			position: absolute;
 			width: 6rem;
 			height: inherit;
 			cursor: -moz-grab;

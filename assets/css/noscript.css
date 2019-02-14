@@ -8,6 +8,7 @@
 
 	body {
 		overflow-x: scroll;
+		overflow-y: scroll;
 	}
 
 /* Wrapper */
